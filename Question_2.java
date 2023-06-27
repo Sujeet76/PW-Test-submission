@@ -9,7 +9,7 @@ public class Question_2 {
   // using HashMap
   public static int firstNonRep(String str) {
     HashMap<Character, Integer> map = new HashMap<>();
-    // Accounting number of duplicate
+    // Accounting frequency of character
     for (int i = 0; i < str.length(); i++) {
       map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
     }
